@@ -1,12 +1,4 @@
 "use strict";
-/*    JavaScript 7th Edition
-      Chapter 5
-      Chapter Case
-
-      Image List
-
-      Filename:lightbox_data.js
-*/
 
 // Title of the slideshow
 let lightboxTitle = "My Western Vacation";

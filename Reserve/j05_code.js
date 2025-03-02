@@ -1,23 +1,23 @@
 "use strict";
-/*    JavaScript 7th Edition
-      Chapter 5
-      Chapter Case
-
-      Application to generate a slide show
-      Author: 
-      Date:   
-
-      Filename: js05.js
-*/
 
 window.addEventListener("load", setupGallery);
 
 function setupGallery() {
-   let imageCount = imgFiles.length;
+   // let imageCount = imgFiles.length;
+   // gallery container
    let galleryBox = document.getElementById("gallery");
    let currentSlide = 1;
+   ////////
    let runShow = true;
    let showRunning;
+
+   // Parts of the gallery
+   // let lbTitle = document.getElementById("h1");
+   // let lbCounter = document.getElementById("div");
+   // let lbPrev = document.getElementById("div");
+   // let lbNext = document.getElementById("div");
+   // let lbPlay = document.getElementById("div");
+   // let lbImages = document.getElementById("div");   
    
    let galleryTitle = document.createElement("h1");
    galleryTitle.id = "galleryTitle";
@@ -49,8 +49,7 @@ function setupGallery() {
    
    let slideBox = document.createElement("div");
    slideBox.id = "slideBox";
-   galleryBox.appendChild(slideBox);
-   
+   galleryBox.appendChild(slideBox);   
    
    for (let i = 0; i < imageCount; i++) {
       let image = document.createElement("img");
@@ -58,8 +57,7 @@ function setupGallery() {
       image.alt = imgCaptions[i];
       image.onclick = createModal;
       slideBox.appendChild(image);
-   }
-   
+   }   
 
    
    
