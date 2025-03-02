@@ -1,5 +1,8 @@
 "use strict";
 
+// Manjula Guneratne 300459860
+// Assignment 2.js file
+
 window.addEventListener("load", createLightbox);
 
 function createLightbox(){
